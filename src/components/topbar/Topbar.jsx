@@ -1,5 +1,6 @@
 import "./topbar.scss";
-import "material-icons/iconfont/material-icons.css";
+// import EmailIcon from "@mui/icons-material/Email";
+// import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 export default function Topbar() {
   return (
@@ -9,7 +10,9 @@ export default function Topbar() {
           <a href="#intro" className="logo">
             genius.
           </a>
-          <div className="itemContainer"></div>
+          <div className="itemContainer">{/* <ContactMailIcon /> */}</div>
+
+          <span>0012063076075</span>
         </div>
         <div className="right"></div>
       </div>

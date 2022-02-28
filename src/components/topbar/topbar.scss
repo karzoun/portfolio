@@ -15,6 +15,9 @@
     align-items: center;
     justify-content: space-between;
     .left {
+      display: flex;
+      align-items: center;
+
       .logo {
         font-size: 40px;
         font-weight: 700;
