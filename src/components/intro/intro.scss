@@ -1,3 +1,22 @@
 .intro {
-  background-color: lightpink;
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    .imgContanier {
+      width: 700px;
+      height: 700px;
+      background-color: yellow;
+      border-radius: 50%;
+
+      img {
+        height: 90%;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+  }
 }
