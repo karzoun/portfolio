@@ -18,5 +18,39 @@
   }
   .right {
     flex: 0.5;
+    position: relative;
+    .wrapper {
+      width: 50%;
+      height: 30%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 8px;
+      left: 40%;
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
   }
 }
