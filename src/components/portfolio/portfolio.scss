@@ -6,16 +6,21 @@
   flex-direction: column;
   align-items: center;
 }
-.wetherImg {
-  width: 300px;
-  margin: 10px;
-}
 .hP {
-  font-size: 30px;
+  font-size: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
+.wetherImg {
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  object-fit: cover;
+  z-index: 1;
+}
+
 .ulP {
   margin: 10px;
   padding: 0;
@@ -40,4 +45,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+
+  .item {
+    width: 220px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $mainColor;
+    .wetherImg {
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
 }
